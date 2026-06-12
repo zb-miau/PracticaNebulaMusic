@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nébula Music - Registro</title>
-    <link rel="stylesheet" href="../static/styles/styles.css">
+    <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
 
@@ -27,7 +27,7 @@
             <form class="auth-form" method="post" action="/crear-cuenta" enctype="application/x-www-form-urlencoded">
                 <!-- Escribe tus etiquetas (label) e inputs aquí -->
                 <h2>Crear Cuenta</h2>
-                <div>
+                <div class="form-group">
                     <label for="nombre" >Nombre completo:</label>
                     <input
                             type="text"
@@ -38,7 +38,7 @@
                             minlength="10"
                             maxlength="250">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="correo">Correo electrónico:</label>
                     <input
                             type="email"
@@ -47,7 +47,7 @@
                             placeholder="juanito@gmail.com"
                             required>
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="contrasenia">Contraseña:</label>
                     <input
                             type="password"
@@ -57,7 +57,7 @@
                             required
                             minlength="8">
                 </div>
-                <div>
+                <div class="form-group">
                     <label for="txt_pseudonimo">Pseudónimo:</label>
                     <input
                             type="text"
@@ -68,7 +68,7 @@
                             placeholder="nebula-2025">
                 </div>
 
-                <div>
+                <div class="radio-group">
                     <label>Género:</label>
                     <div>
                         <input
@@ -95,7 +95,7 @@
                     </div>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="sel_subscripcion">Tipo de subsripción:</label>
                     <select id="sel_subscripcion" name="sel_subscripcion" required>
                         <option value="">--Selecciona una opción</option>
@@ -105,7 +105,7 @@
                     </select>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="fecha_nacimiento">Fecha nacimiento:</label>
                     <input
                             type="date"
@@ -114,12 +114,12 @@
                             required>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <label for="comentarios">Comentarios:</label>
                     <textarea id="comentarios" name="comentarios" rows="4" cols="40" placeholder="Cuéntanos que música te gusta!"></textarea>
                 </div>
 
-                <div>
+                <div class="form-group">
                     <input
                             type="checkbox"
                             id="terminos"
@@ -129,11 +129,11 @@
                     <label>Acepto los términos y condiciones</label>
                 </div>
                 <div>
-                    <button type="submit">Crear cuenta</button>
-                    <button type="reset">Limpiar Formulario</button>
+                    <button type="submit" class="btn-primary">Crear cuenta</button>
+                    <button type="reset" class="btn-secondary">Limpiar Formulario</button>
                 </div>
             </form>
-        <p>¿Ya tienes una cuenta? </p> <a href="iniciar-sesion.html"> Inicia sesión</a>
+        <p class="link">¿Ya tienes una cuenta? <a href="iniciar-sesion.html"> Inicia sesión</a></p>
         </section>
     </main>
 
